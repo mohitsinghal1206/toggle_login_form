@@ -35,7 +35,7 @@ document.getElementById('signInForm').addEventListener('submit', function (event
 
 // Simulate social media login
 function simulateSocialLogin(platform) {
-    alert(`Simulating login with ${platform}`);
+    alert(`Login in with ${platform}`);
     // Example for sign-in form:
     document.getElementById('signInEmail').value = `user@${platform.toLowerCase()}.com`;
     document.getElementById('signInPassword').value = 'password123';
