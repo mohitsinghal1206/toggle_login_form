@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Login & Register Page</title>
+</head>
+<body>
+    <div class="container" id="container">
+        <!-- Sign Up Form -->
+        <div class="form-container sign-up">
+            <form id="signUpForm">
+                <h1>Create Account</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Google')"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Facebook')"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Spotify')"><i class='bx bxl-spotify'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('YouTube')"><i class='bx bxl-youtube'></i></a>
+                </div>
+                <span>Register with E-mail</span>
+                <input type="text" placeholder="Name" id="signUpName">
+                <input type="email" placeholder="Enter E-mail" id="signUpEmail">
+                <input type="password" placeholder="Enter Password" id="signUpPassword">
+                <button type="submit">Sign Up</button>
+            </form>
+        </div>
+
+        <!-- Sign In Form -->
+        <div class="form-container sign-in">
+            <form id="signInForm">
+                <h1>Sign In</h1>
+                <div class="social-icons">
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Google')"><i class='bx bxl-google'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Facebook')"><i class='bx bxl-facebook'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('Spotify')"><i class='bx bxl-spotify'></i></a>
+                    <a href="#" class="icons" onclick="simulateSocialLogin('YouTube')"><i class='bx bxl-youtube'></i></a>
+                </div>
+                <span>Login With Email & Password</span>
+                <input type="email" placeholder="Enter E-mail" id="signInEmail">
+                <input type="password" placeholder="Enter Password" id="signInPassword">
+                <a href="#">Forget Password?</a>
+                <button type="submit">Sign In</button>
+            </form>
+        </div>
+
+        <div class="toggle-container">
+            <div class="toggle">
+                <div class="toggle-panel toggle-left">
+                    <h1>Welcome To <br>Code with Patel</h1>
+                    <p>Sign in With ID & Password</p>
+                    <button class="hidden" id="login">Sign In</button>
+                </div>
+                <div class="toggle-panel toggle-right">
+                    <h1>Hii Coder's</h1>
+                    <p>Join "Code With Patel" to Improve Your Coding Skills</p>
+                    <button class="hidden" id="register">Sign Up</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="index.js"></script>
+</body>
+</html>
