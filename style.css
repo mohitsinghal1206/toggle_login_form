@@ -160,7 +160,7 @@ body{
 }
 
 .toggle{
-    background-color: rgba(12, 4, 255, 0.952);
+    background-color: rgb(233 41 41);
     height: 100%;
     color: #fff;
     position: relative;
@@ -208,3 +208,16 @@ body{
     height: auto;
     margin-bottom: 20px;
 }
+/* Video Background */
+#bgVideo {
+    position: fixed;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    z-index: -1;
+    object-fit: cover;
+    opacity: 0.6; /* Slightly fade the video for better visibility of foreground content */
+}
+
+/* Rest of your CSS for forms and containers */
